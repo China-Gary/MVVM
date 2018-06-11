@@ -13,6 +13,9 @@
 		3A20F35F20C4DE66003D04E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A20F35E20C4DE66003D04E9 /* Assets.xcassets */; };
 		3A20F36220C4DE66003D04E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A20F36020C4DE66003D04E9 /* LaunchScreen.storyboard */; };
 		3A20F36520C4DE66003D04E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A20F36420C4DE66003D04E9 /* main.m */; };
+		3A4320D920CE63A70085F090 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4320D820CE63A70085F090 /* UIImage+Category.m */; };
+		3A4320DC20CE756C0085F090 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4320DB20CE756C0085F090 /* LocationManager.m */; };
+		3A4320DE20CE75F50085F090 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4320DD20CE75F50085F090 /* CoreLocation.framework */; };
 		3AD98B3220C54F2400FB11F4 /* NSString+MD5Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD98B2A20C54F2200FB11F4 /* NSString+MD5Hex.m */; };
 		3AD98B3320C54F2400FB11F4 /* UIBarButtonItem+NavBarBtnItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD98B2B20C54F2300FB11F4 /* UIBarButtonItem+NavBarBtnItem.m */; };
 		3AD98B3420C54F2400FB11F4 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD98B2D20C54F2300FB11F4 /* UIButton+ImageTitleSpacing.m */; };
@@ -61,6 +64,11 @@
 		3A20F36120C4DE66003D04E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A20F36320C4DE66003D04E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A20F36420C4DE66003D04E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A4320D720CE63A70085F090 /* UIImage+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		3A4320D820CE63A70085F090 /* UIImage+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		3A4320DA20CE756C0085F090 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		3A4320DB20CE756C0085F090 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		3A4320DD20CE75F50085F090 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3AD98B2A20C54F2200FB11F4 /* NSString+MD5Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Hex.m"; sourceTree = "<group>"; };
 		3AD98B2B20C54F2300FB11F4 /* UIBarButtonItem+NavBarBtnItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+NavBarBtnItem.m"; sourceTree = "<group>"; };
 		3AD98B2D20C54F2300FB11F4 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
@@ -143,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4320DE20CE75F50085F090 /* CoreLocation.framework in Frameworks */,
 				66BE49BBECE88C3A8CE659C2 /* libPods-sport.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +252,8 @@
 				3AD98B5820C7CD2700FB11F4 /* NSDate+Utils.m */,
 				3AD98B5A20C7DC5D00FB11F4 /* NSString+APP.h */,
 				3AD98B5B20C7DC5D00FB11F4 /* NSString+APP.m */,
+				3A4320D720CE63A70085F090 /* UIImage+Category.h */,
+				3A4320D820CE63A70085F090 /* UIImage+Category.m */,
 				3AD98B5220C6ABF400FB11F4 /* UIScrollView+Gestures.h */,
 				3AD98B5320C6ABF400FB11F4 /* UIScrollView+Gestures.m */,
 				3AD98B5020C6834500FB11F4 /* UIViewController+AddMyMethod.h */,
@@ -327,6 +338,8 @@
 				3AD98B2B20C54F2300FB11F4 /* UIBarButtonItem+NavBarBtnItem.m */,
 				3AD98B3020C54F2300FB11F4 /* UIButton+ImageTitleSpacing.h */,
 				3AD98B2D20C54F2300FB11F4 /* UIButton+ImageTitleSpacing.m */,
+				3A4320DA20CE756C0085F090 /* LocationManager.h */,
+				3A4320DB20CE756C0085F090 /* LocationManager.m */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -516,6 +529,7 @@
 		83E7F039E4D1C08191B4EF31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A4320DD20CE75F50085F090 /* CoreLocation.framework */,
 				66954436CE58AE5E1FCC54B9 /* libPods-sport.a */,
 			);
 			name = Frameworks;
@@ -648,6 +662,7 @@
 				3AD98B3320C54F2400FB11F4 /* UIBarButtonItem+NavBarBtnItem.m in Sources */,
 				3ADC751820C4EEAE0037BEAF /* HomeVC.m in Sources */,
 				3A20F36520C4DE66003D04E9 /* main.m in Sources */,
+				3A4320DC20CE756C0085F090 /* LocationManager.m in Sources */,
 				3ADC756020C527480037BEAF /* ButtonScrollerView.m in Sources */,
 				3ADC753220C4EFDC0037BEAF /* gameVC.m in Sources */,
 				3ADC752720C4EF900037BEAF /* ActivityVC.m in Sources */,
@@ -665,6 +680,7 @@
 				3ADC754220C503200037BEAF /* APIClient.m in Sources */,
 				3AD98B6D20C8E0FD00FB11F4 /* ImageTabBar.m in Sources */,
 				3A20F35720C4DE65003D04E9 /* AppDelegate.m in Sources */,
+				3A4320D920CE63A70085F090 /* UIImage+Category.m in Sources */,
 				3ADC753E20C4FEBF0037BEAF /* Networking.m in Sources */,
 				3AD98B5120C6834500FB11F4 /* UIViewController+AddMyMethod.m in Sources */,
 				3ADC755A20C51FE10037BEAF /* UIFactory.m in Sources */,

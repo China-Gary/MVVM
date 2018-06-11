@@ -15,4 +15,13 @@
 
 //生成随机数字符串
 + (NSString *) randomStr : (NSInteger) length;
+
+/**邮箱*/
++ (BOOL)isEmail:(NSString *)email;
+
+/**是否手机号码*/
++ (BOOL)isPhone:(NSString *)phone;
+
++ (BOOL)isTelephone:(NSString *)phone;
+
 @end

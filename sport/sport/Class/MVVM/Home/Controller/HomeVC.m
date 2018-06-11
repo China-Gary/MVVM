@@ -14,6 +14,7 @@
 #import "HotTableViewCell.h"
 #import "ButtonScrModel.h"
 #import "NewsDetaiVC.h"
+#import "LocationManager.h"
 @interface HomeVC ()<buttonScrollerDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,assign)NSInteger butntag;
 @property (nonatomic ,strong) NSArray *buttonScrArr;
@@ -51,6 +52,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     self.page = 1;
     self.butntag = 1;
     self.homeModel = [[HomeViewModel alloc] initWithTarge:self];

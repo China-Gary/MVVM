@@ -13,6 +13,7 @@
 #import "UIButton+CS_FixMultiClick.h"
 #import "UIControl+CS_FixMultiClick.h"
 #import "UIImage+Color.h"
+#import "LocationManager.h"
 @interface NewsDetaiVC ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (nonatomic ,strong)UIImageView *img;
 @property (nonatomic ,strong)UICollectionView *collView;

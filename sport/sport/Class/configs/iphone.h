@@ -23,8 +23,10 @@
 #define  kTabbarHeight         (k_iPhoneX ? (49.f+34.f) : 49.f)
 // iPhone X
 #define  k_iPhoneX (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
-
-
+//获取appdelegate
+#define kAppDelegate               ((AppDelegate *)([UIApplication sharedApplication].delegate))
+//获取根视图
+#define kCurrentKeyWindow    [UIApplication sharedApplication].keyWindow
 
 /// 高度系数 812.0 是iPhoneX的高度尺寸，667.0表示是iPhone 6 的高度
 #define kHeight_Iphone6_Scale  kScreenHeight /667.0
